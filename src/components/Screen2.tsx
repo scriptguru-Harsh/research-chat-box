@@ -59,6 +59,10 @@ export function Screen2({ onCardPin, onRefine }: Screen2Props) {
   const [showResultsSheet, setShowResultsSheet] = useState(false);
   const [showPinnedView, setShowPinnedView] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
+    {id:"0",
+        type:"system" as const,
+        content:"Hi, I can help you investigate family history, people, and records. What are you looking for?",
+      },
     {
       id: "1",
       type: "user" as const,

@@ -111,6 +111,10 @@ export function Screen1({ onNext }: Screen1Props) {
           },
         ]
       : []),
+      ...([{id:"0",
+        type:"system" as const,
+        content:"Hi, I can help you investigate family history, people, and records. What are you looking for?",
+      }])
   ];
 
   const handleViewResults = () => {
